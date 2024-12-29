@@ -32,7 +32,9 @@ SECRET_KEY = "django-insecure-d5(xh-y)$tsfe(!p_$71@*b@z)nu_cq_%v5uh*=(0z=_=%b78i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+ALLOWED_HOSTS = ['tododjango1.onrender.com', '127.0.0.1']
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 
